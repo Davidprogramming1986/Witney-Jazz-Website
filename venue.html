@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Witney Jazz - Venue</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="music_file" href="music_file.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+        <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="navbar-inverse side-collapse in nav-center">
+              <nav role="navigation" class="navbar-collapse">
+                <ul class="nav navbar-nav nav-ul">
+                  <li class='nav-li'><a href="index.html">What’s On</a></li>
+                  <li class='nav-li'><a href="venue.html">Venue</a></li>
+                  <li class='nav-li'><a href="about.html">About</a></li>
+                  <li class='nav-li'><a href="links.html">Useful Links</a></li>
+                  <li class='nav-li'><a href="book.html">How to book</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class='grid-background'>
+            <div class="container side-collapse-container">
+              <div class="row">
+                <div class=col-xs-12>
+
+                    <h1 class='logo-witney'>Witney<em class='logo-jazz'>Jazz</em></h1>
+
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-xs-12 bottomfill-venue'>
+                    <h3>Witney Jazz is based at Burwell Hall just minutes from the centre of Witney town. There’s plenty of free parking, great facilities including a bar, air conditioning and tables/seating for up to 80. We pride ourselves on creating a candle-lit, welcoming atmosphere with a stage, great sound and lighting. </h3>
+                </div>
+                <div class='col-xs-12 col-md-6'>
+                    <h2>Directions</h2>
+                    <p class='directions-main'>Burwell Hall, Thorney Leys, Witney OX28 5NP</p>
+                    <p class='directions'>
+                      <b>A40 From Oxford (i.e. westbound):</b><br />
+                      Exit A40 at the A415 signposted for Witney Town Centre,<br />
+                      (from Oxford &amp; the east, this is the exit after the one for
+                      Witney East).<br />
+                      At roundabout take third exit signed to Town Centre.<br />
+                      At traffic lights, turn left onto Thorney Leys.<br />
+                      Take the second on the right (you'll see the sign for Burwell Hall on
+                      the lamp post).<br />
+                      Take the second turn on the right.<br />
+                      <br />
+                      <b>A40 From Cheltenham (i.e. eastbound):</b><br />
+                      Exit A40 at the A415, following signs for Witney Town Centre.<br />
+                      Turn left onto Ducklington Lane.<br />
+                      Immediately turn left again at traffic lights, into Thornley Leys.<br />
+                      Follow directions above. <br />
+                    </p>
+                </div>
+
+                <div class='col-xs-12 col-md-6'>
+                    <img class='venue-pic bottomfill'src="img/Venue 1.jpg" alt="Venue Picture">
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-xs-12 ol-sm-12'>
+                    <div id="map"></div>
+                </div>
+            </div>
+                
+            <script>
+              function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 51.777861, lng: -1.503587},
+                    zoom: 16
+                });
+                var marker = new google.maps.Marker({
+                    position: map.getCenter(),
+                    icon: {
+                      path: google.maps.SymbolPath.CIRCLE,
+                      scale: 10
+                    },
+                    draggable: true,
+                    map: map
+                  });
+              }
+            </script>
+
+            <div class='row'>
+                    <div class='col-xs-12 col-sm-12'>
+                        <div class="btn-group btn-group-justified links-bottom">
+                              <a href="https://twitter.com/WitneyJazzJazz" class="link-bottom"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
+                              <a href="https://www.facebook.com/witneyjazz" class="link-bottom border"><i class="fa fa-facebook-official fa-fw"></i>Facebook</a>
+                              <!--
+                              <a href="https://pauljefferies.com" class="link-bottom border"><i class="fa fa-music fa-fw"></i>Profile</a>
+                              -->
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+
+              <!-- end of container -->
+        </div>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-q2mtkpuA1YJ12RSBwzEMUfsU8y8hfXE&callback=initMap">
+        </script>
+        
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
